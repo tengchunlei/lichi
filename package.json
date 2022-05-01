@@ -13,6 +13,7 @@
     "node-sass": "npm:dart-sass",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "5.0.1",
     "styled-components": "5.0.1",
     "typescript": "^4.4.2",
@@ -43,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-router-dom": "^5.3.3",
     "@types/styled-components": "5.0.1"
   }
 }
