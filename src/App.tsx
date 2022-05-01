@@ -7,6 +7,8 @@ import {
     Link, Redirect
 } from "react-router-dom";
 import styled from 'styled-components';
+import Nav from 'components/Nav';
+
 const Wrapper =styled.div`
 height: 100vh;
   display: flex;
@@ -18,56 +20,32 @@ const Main=styled.div`
   flex-grow: 1;
   overflow: auto;
 `
-const Nav=styled.div`
 
-> ul{
-  border:1px solid red; 
-  display:flex;
-  > li{
-    width:33.333%;
-    text-align: center;
-    padding: 16px;
-  }
-}
-
-`
  function App() {
-    return (
-        <Router>
-            <Wrapper>
-                <Main>
-                <Switch>
-                <Route path="/tags">
-                    <Tags/>
-                </Route>
-                <Route path="/money">
-                    <Money/>
-                </Route>
-                <Route path="/statistics">
-                    <Statistics/>
-                </Route>
-                <Redirect exact from ="/" to="/money"/>
-                <Route path="*">
-                    <NoMatch />
-                </Route>
-            </Switch>
-                </Main>
-                <Nav>
-                    <ul>
-                        <li>
-                            <Link to="/tags">标签页</Link>
-                        </li>
-                        <li>
-                            <Link to="/money">记账页</Link>
-                        </li>
-                        <li>
-                            <Link to="/statistics">统计页</Link>
-                        </li>
-                    </ul>
-                </Nav>
-            </Wrapper>
-        </Router>
-    );
+     return (
+         <Router>
+             <Wrapper>
+                 <Main>
+                     <Switch>
+                         <Route path="/tags">
+                             <Tags/>
+                         </Route>
+                         <Route path="/money">
+                             <Money/>
+                         </Route>
+                         <Route path="/statistics">
+                             <Statistics/>
+                         </Route>
+                         <Redirect exact from="/" to="/money"/>
+                         <Route path="*">
+                             <NoMatch/>
+                         </Route>
+                     </Switch>
+                 </Main>
+                <Nav/>
+             </Wrapper>
+         </Router>
+     );
 }
 
 function Tags() {
