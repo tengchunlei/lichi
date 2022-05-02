@@ -6,12 +6,13 @@ import {
     Route,
     Link, Redirect
 } from "react-router-dom";
-import styled from 'styled-components';
-import Nav from 'components/Nav';
-import Layout from "components/Layout";
+import Statistics from "./views/Statistics";
+import NoMatch from "./views/NoMatch";
+import Tags from "./views/Tags";
+import Money from "./views/Money";
 
 
- function App() {
+function App() {
      return (
          <Router>
                      <Switch>
@@ -31,29 +32,6 @@ import Layout from "components/Layout";
                      </Switch>
          </Router>
      );
-}
-
-function Tags() {
-    return (
-        <Layout>标签页面</Layout>
-    )
-}
-
-function Statistics() {
-    return(
-        <Layout>统计页面</Layout>
-    );
-}
-
-function Money() {
-    return (
-        <Layout>记账页面</Layout>
-    );
-}
-function NoMatch() {
-    return (
-        <Layout>页面不存在,请重新输入地址</Layout>
-    );
 }
 
 export default App;
