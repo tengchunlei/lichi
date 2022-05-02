@@ -90,7 +90,9 @@
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.3.3",
-    "@types/styled-components": "5.0.1"
+    "@types/styled-components": "5.0.1",
+    "svg-sprite-loader": "^6.0.11",
+    "svgo-loader": "^3.0.0"
   },
   "jest": {
     "roots": [
