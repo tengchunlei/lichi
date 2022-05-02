@@ -17,8 +17,13 @@ body {
   font-family: $font-hei;
   font-size: 16px;
   line-height: 1.2;
+  background: #f5f5f5;
 }
 .icon{
   width:1em ;
   height:1em;
+}
+
+button{
+  font-family:inherit;
 }
