@@ -22,13 +22,11 @@ function App() {
          <Router>
                      <Switch>
                          <Route exact path="/tags">
-                             <Tags/>
+                              <Tags/>
                          </Route>
                          <Route exact path="/tags/:tag">
                              <Tag/>
                          </Route>
-
-
                          <Route exact path="/money">
                              <Money/>
                          </Route>
