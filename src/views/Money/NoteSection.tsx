@@ -19,7 +19,8 @@ const NoteSection:React.FC<Props> =(props)=>{
     }
     return(
         <Wrapper>
-            <Input label="备注" type ="text" value={note} onChange={onChange}/>
+            <Input label="备注" type ="text" value={note} onChange={onChange}
+            placeholder="请填写备注"/>
         </Wrapper>
     )
 }

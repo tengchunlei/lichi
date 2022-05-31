@@ -9,7 +9,7 @@ const Label =styled.label`
     > input{
       display:block;
       width:100%;
-      height:72px;
+      height:44px;
       background:none;
       border:none;
     }
