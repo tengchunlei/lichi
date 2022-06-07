@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
-import {createId} from "./lib/createId";
-import Tags from "./views/Tags";
-import {useUpdate} from "./hooks/useUpdate";
+import {createId} from "../lib/createId";
+import Tags from "../views/Tags";
+import {useUpdate} from "./useUpdate";
 
 const useTags=()=>{
     const [tags,setTags]=useState<{id:number;name:string}[]>([]);
@@ -19,7 +19,7 @@ const useTags=()=>{
         setTags(localTags);
   },[]);
 
-    useUpdate(()=>{
+     useUpdate(()=>{
       window.localStorage.setItem('tags',JSON.stringify(tags))
   },[tags]);
     const findTag=(id:number)=>tags.filter(tag=>tag.id===id)[0];
