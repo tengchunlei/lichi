@@ -1,6 +1,5 @@
 import {useEffect, useState} from "react";
 import {createId} from "../lib/createId";
-import Tags from "../views/Tags";
 import {useUpdate} from "./useUpdate";
 
 const useTags=()=>{

@@ -14,6 +14,7 @@ type newRecordItem=Omit<RecordItem,'createAt'>
         setRecords(JSON.parse(window.localStorage.getItem('records')||'[]'))
     },[]);
 
+
     useUpdate(()=>{
         window.localStorage.setItem('records',JSON.stringify(records))
     },records)
