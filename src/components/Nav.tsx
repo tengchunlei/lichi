@@ -24,9 +24,9 @@ line-height: 24px;
 
       }
       &.selected{
-        color:yellow;
+        color:rgb(255, 0, 0);
         .icon{
-          fill: yellow;
+          fill: rgb(255, 0, 0);
         }
         
       }

@@ -15,7 +15,6 @@ const Wrapper= styled.section`
   > ol{
     margin:0 -12px;
   > li{
-    border:1px solid yellow;
     border-radius: 18px;
     background: #D9D9D9;
     display: inline-block;
@@ -23,7 +22,7 @@ const Wrapper= styled.section`
     font-size: 14px;
     margin:8px 12px;
     &.selected{
-      background:yellow;
+      background:rgba(255, 102, 0);
     }
   }
   }
