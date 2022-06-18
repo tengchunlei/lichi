@@ -14,13 +14,13 @@ const Wrapper= styled.section`
     margin:0 -12px;
   > li{
     border-radius: 18px;
-    background: #D9D9D9;
+    background:  rgb(227, 227, 227);
     display: inline-block;
     padding:3px 18px;
     font-size: 14px;
     margin:8px 12px;
     &.selected{
-      background:rgba(255, 102, 0);
+      background:rgba(255, 218, 68);
     }
   }
   }

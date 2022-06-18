@@ -6,7 +6,7 @@ import {RecordItem, useRecords} from "../hooks/useRecords";
 import {useTags} from "../hooks/useTags";
 import day from 'dayjs';
 const CategoryWrapper = styled.div`
-background: white;
+background: rgb(255, 218, 68);
 `
 
 const Item = styled.div`

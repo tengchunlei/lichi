@@ -9,10 +9,11 @@ const useTags=()=>{
         if(localTags.length===0){
 
             localTags=[
-                {id:createId(),name:'衣'},
-                {id:createId(),name:'食'},
-                {id:createId(),name:'住'},
-                {id:createId(),name:'行'},
+                {id:createId(),name:'学习'},
+                {id:createId(),name:'健身'},
+                {id:createId(),name:'运动'},
+                {id:createId(),name:'饮食'},
+                {id:createId(),name:'交通'},
             ];
         }
         setTags(localTags);
@@ -41,7 +42,7 @@ const useTags=()=>{
        setTags(tags.filter(tag=>tag.id!==id))
     };
     const addTag = ()=>{
-        const tagName=window.prompt('新增标签为');
+        const tagName=window.prompt('您要新增的标签名称是？');
         console.log(tagName);
         if(tagName!==null &&tagName!==''){
             setTags([...tags,{id:createId(),name:tagName}])

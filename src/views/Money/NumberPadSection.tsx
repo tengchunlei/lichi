@@ -39,9 +39,6 @@ const NumberPadSection:React.FC<Props>=(props)=>{
 
    };
 
-
-
-
     return(
         <Wrapper>
             <div className="output">

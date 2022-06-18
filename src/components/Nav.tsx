@@ -24,9 +24,9 @@ line-height: 24px;
 
       }
       &.selected{
-        color:rgb(255, 0, 0);
+        color:rgb(255, 218, 68);
         .icon{
-          fill: rgb(255, 0, 0);
+          fill: rgb(255, 218, 68);
         }
         
       }
@@ -41,24 +41,25 @@ const Nav = ()=>{
     return(
         <NavWrapper>
             <ul>
-                <li>
 
-      
-                    <NavLink to="/tags"  activeClassName="selected">
-                        <Icon name="tag"/>
-                        标签页
-                    </NavLink>
-                </li>
                 <li>
                     <NavLink to="/money" activeClassName="selected">
                         <Icon name="money"/>
-                        记账页
+                        来记一笔
                     </NavLink>
                 </li>
+
+                <li>
+                    <NavLink to="/tags"  activeClassName="selected">
+                        <Icon name="tag"/>
+                        收支类别
+                    </NavLink>
+                </li>
+
                 <li>
                     <NavLink to="/statistics"activeClassName="selected">
                         <Icon name="chart"/>
-                        统计页
+                        历史明细
                     </NavLink>
                 </li>
             </ul>

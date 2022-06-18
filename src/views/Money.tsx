@@ -21,7 +21,7 @@ const defaultFormData={
 
 const CategoryWrapper =styled.div`
   
-    background:#c4c4c4;
+    background:rgb(255, 218, 68);
 `;
 
 function Money() {
@@ -42,6 +42,11 @@ function Money() {
 
     return (
         <MyLayout scrollTop={9999}>
+            <CategoryWrapper>
+                <CategorySection value={selected.category}
+                                 onChange={category=>onChange({category})}
+                />
+            </CategoryWrapper>
 
             <TagsSection value={selected.tagIds}
                          onChange={tagIds=>onChange({tagIds})} />
@@ -49,11 +54,6 @@ function Money() {
                          onChange={note=>onChange({note})}
             />
 
-            <CategoryWrapper>
-                <CategorySection value={selected.category}
-                                 onChange={category=>onChange({category})}
-                />
-            </CategoryWrapper>
 
             <NumberPadSection value={selected.amount}
                               onChange={amount=>onChange({amount})}
