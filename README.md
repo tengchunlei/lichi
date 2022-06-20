@@ -1,5 +1,11 @@
 # 开发
+yarn start
 
 
-# 部署
+# build
+yarn build
+
+
+#部署
+yarn deploy
 
