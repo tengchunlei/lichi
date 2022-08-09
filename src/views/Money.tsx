@@ -34,12 +34,12 @@ function Money() {
         })
     };
 
-    const submit=()=>{
-        addRecord(selected);
-        alert('保存成功');
-        setSelected(defaultFormData);
-    }
-
+    const submit=()=> {
+        if (addRecord(selected)) {
+            alert('保存成功');
+            setSelected(defaultFormData);
+        }
+    };
     return (
         <MyLayout scrollTop={9999}>
             <CategoryWrapper>
@@ -47,14 +47,11 @@ function Money() {
                                  onChange={category=>onChange({category})}
                 />
             </CategoryWrapper>
-
             <TagsSection value={selected.tagIds}
                          onChange={tagIds=>onChange({tagIds})} />
             <NoteSection value={selected.note}
                          onChange={note=>onChange({note})}
             />
-
-
             <NumberPadSection value={selected.amount}
                               onChange={amount=>onChange({amount})}
             onOk={submit}
